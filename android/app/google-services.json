@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "500306210271",
+    "project_id": "fir-cloudmessage-12ff7",
+    "storage_bucket": "fir-cloudmessage-12ff7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500306210271:android:4dd5846590a175b6f2e86a",
+        "android_client_info": {
+          "package_name": "com.dedsecalpha.endgame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXWrH-hfBtyNdrEewb5Eqa2TUnSUPs8MU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
