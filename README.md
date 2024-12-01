@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
+# React Native Android Application with Firebase Cloud Messaging (FCM)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Project Overview  
+This is a React Native Android application that provides users with a basic interface to manage subscription channels. Users can subscribe or unsubscribe from channels, and notifications are managed using Firebase Cloud Messaging (FCM), supporting both foreground and background notifications.
 
-## Get started
+---
 
-1. Install dependencies
+## Features  
+### Channel Management  
+- Users can view a list of channels.  
+- Subscribe or unsubscribe from individual channels.  
 
-   ```bash
-   npm install
-   ```
+### Push Notifications  
+- FCM integration to deliver notifications when the app is in the foreground or background.  
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## Setup Instructions  
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Clone the Repository  
 ```bash
-npm run reset-project
+git clone <repository-url>
+cd <project-directory>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 3. Firebase Setup
+- Create a Firebase project in the [Firebase Console](https://console.firebase.google.com).
+- Add an Android app to your project and download the google-services.json file.
+- Place the google-services.json file in the android/app directory of your project.
 
-## Join the community
 
-Join our community of developers creating universal apps.
+### 4. Configure FCM
+- Enable Firebase Cloud Messaging in your Firebase project.
+- Add the FCM configuration to your application as described in the [Firebase Docs](https://firebase.google.com/docs).
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 5. Run the Application
+```bash
+npx expo start
+```
+
+---
+### Usage Instructions
+- Open the application on an Android device.
+- View the list of available channels.
+- Tap a channel to subscribe or unsubscribe.
+- Notifications will be received for subscribed channels.
+
+---
+
+### Dependencies
+- React Native
+- Firebase Cloud Messaging (FCM)
+- @react-native-firebase/app
+- @react-native-firebase/messaging
+
+---
+
+### License
+This project is licensed under the MIT License. See the ```LICENSE``` file for details.
